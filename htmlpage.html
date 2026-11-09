@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo Tattoo Avalos - Realismo & Chicano</title>
+    <!-- Fuentes Rockeras / Urbanas desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Oswald:wght@500;700&family=Rock+Salt&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="StyleSheet.css">
+</head>
+<body>
+
+    <!-- Menú Superior (Navegación) -->
+    <header>
+        <div class="header-container">
+            <h1 class="logo">ENZO AVALOS INK</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#estudio">El Estudio</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#consulta">Consulta Rápida</a></li>
+                    <li><a href="#contacto">Ubicación</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Principal -->
+        <section id="inicio" class="hero">
+            <h2 class="titulo-rocker">Tatuajes de Autor & Diseños Exclusivos</h2>
+            <p class="subtitulo-hero">REALISMO & ESTILO CHICANO</p>
+            <p class="frase-creativa">"Contame tu idea para comenzar un proceso creativo"</p>
+        </section>
+
+        <!-- Información del Estudio Privado -->
+        <section id="estudio" class="seccion-info">
+            <div class="caja-info">
+                <h3 class="titulo-rocker">ESTUDIO PRIVADO</h3>
+                <p>Atención en un ambiente totalmente esterilizado y profesional.</p>
+                <div class="detalles-atencion">
+                    <p><strong>Horario de consultas:</strong> Lunes a Sábados de 10:00 a 20:00 hs</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de Trabajos (11 Lugares / 11 fotos) -->
+        <section id="galeria">
+            <h2 class="titulo-neon">BLACK AND GREY / REALISMO / CHICANO</h2>
+            <p class="subtitulo-galeria">Una selección de las mejores piezas recientes</p>
+
+            <div class="grid-galeria">
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto1.jpg.jpeg" alt="Tatuaje 1"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto2.jpg.jpeg" alt="Tatuaje 2"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto3.jpg.jpeg" alt="Tatuaje 3"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto4.jpg.jpeg" alt="Tatuaje 4"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto5.jpg.jpeg" alt="Tatuaje 5"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto6.jpg.jpeg" alt="Tatuaje 6"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto7.jpg.jpeg" alt="Tatuaje 7"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto8.jpg.jpeg" alt="Tatuaje 8"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto9.jpg.jpeg" alt="Tatuaje 9"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto10.jpg.jpeg" alt="Tatuaje 10"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto11.jpg.jpeg" alt="Tatuaje 11"></div></div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE CONSULTA RÁPIDA -->
+        <section id="consulta" class="seccion-formulario">
+            <div class="caja-formulario">
+                <h2 class="titulo-rocker">Cotizá tu Tatuaje</h2>
+                <p>Completá los datos para armar la propuesta de tu diseño:</p>
+
+                <form id="formTattoo">
+                    <div class="grupo-campo">
+                        <label for="nombre">Tu Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Ej: Juan Pérez" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="zona">Zona del cuerpo:</label>
+                        <input type="text" id="zona" placeholder="Ej: Antebrazo, Espalda, Gemelo" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="tamano">Tamaño estimado (cm):</label>
+                        <input type="text" id="tamano" placeholder="Ej: 15x10 cm" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="idea">Contame tu idea / estilo:</label>
+                        <textarea id="idea" rows="4" placeholder="Describí qué te querés tatuar, si es en blanco y negro o color..." required></textarea>
+                    </div>
+
+                    <button type="button" class="btn-wsp btn-enviar" onclick="enviarFormularioWsp()">ENVIAR CONSULTA POR WHATSAPP</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Seccion Ubicación estilo Banner Ancho -->
+        <section id="contacto" class="seccion-ubicacion-banner">
+            <h2 class="titulo-rocker titulo-mapa">Ubicación del Estudio</h2>
+
+            <div class="mapa-fullwidth">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3413.43828341617!2d-61.4985!3d-31.2589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae45e4e7e60d%3A0x892a08ab8a9b703a!2sFalucho%201920%2C%20Rafaela%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="contenedor-contacto-columnas">
+                <div class="columna-contacto">
+                    <h3 class="titulo-rocker-sub">Contacto</h3>
+                    <p class="nombre-estudio">ENZO TATTOO AVALOS</p>
+                    <p>📍 Falucho 1920</p>
+                    <p>Rafaela (Santa Fe), Argentina</p>
+                    <p>📱 +54 9 3492 60-3853</p>
+                </div>
+
+                <div class="columna-contacto">
+                    <h3 class="titulo-rocker-sub">Atención</h3>
+                    <p>Lunes a Sábados</p>
+                    <p>10:00 hs a 20:00 hs</p>
+                </div>
+
+                <div class="columna-contacto columna-btn">
+                    <h3 class="titulo-rocker-sub">Turnos Directos</h3>
+                    <a href="https://wa.me/5493492603853?text=Hola%20Enzo,%20tengo%20una%20idea%20para%20un%20tatuaje%20y%20quiero%20consultar%20por%20un%20turno" target="_blank" class="btn-wsp">SOLICITAR TURNO</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Enzo Tattoo Avalos - Rafaela, Santa Fe</p>
+    </footer>
+
+    <script>
+        function enviarFormularioWsp() {
+            var nombre = document.getElementById('nombre').value;
+            var zona = document.getElementById('zona').value;
+            var tamano = document.getElementById('tamano').value;
+            var idea = document.getElementById('idea').value;
+
+            if (!nombre || !zona || !idea) {
+                alert('Por favor completá los campos del formulario antes de enviar.');
+                return;
+            }
+
+            var texto = `Hola Enzo, soy ${nombre}. Quisiera cotizar un tatuaje:%0A%0A- *Zona:* ${zona}%0A- *Tamaño aprox:* ${tamano}%0A- *Idea:* ${idea}`;
+            var url = `https://wa.me/5493492603853?text=${texto}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+﻿/* --- RESET GENERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* --- LOGO ESTILO VIEJAS LOCAS --- */
+.logo {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 2.3rem;
+    color: #000000;
+    letter-spacing: 2px;
+    text-shadow: -3px -3px 0 #ffffff, 3px -3px 0 #ffffff, -3px 3px 0 #ffffff, 3px 3px 0 #ffffff, -5px 0px 0 #ffffff, 5px 0px 0 #ffffff, 0px -5px 0 #ffffff, 0px 5px 0 #ffffff, 0 0 15px rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease;
+}
+
+    .logo:hover {
+        transform: scale(1.05) rotate(-2deg);
+    }
+
+/* --- TÍTULOS PRINCIPALES: NARANJA FUEGO NEÓN --- */
+.titulo-rocker {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.7rem;
+    color: #ff4500;
+    text-transform: uppercase;
+    text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000, 0 0 8px #ff4500, 0 0 20px #ff4500, 0 0 35px #ff2200;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+.titulo-rocker-sub {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.1rem;
+    color: #ff4500;
+    text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000, 0 0 10px #ff4500;
+    margin-bottom: 12px;
+}
+
+/* --- TÍTULO NEÓN GALERÍA --- */
+.titulo-neon {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff4500, 0 0 35px #ff4500, 0 0 50px #ff4500;
+}
+
+/* --- ENCABEZADO --- */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #ff4500;
+    box-shadow: 0 4px 20px rgba(255, 69, 0, 0.4);
+    padding: 15px 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.94)), url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(4px);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+    nav a:hover {
+        color: #ff8c00;
+        text-shadow: 0 0 8px #ff4500;
+    }
+
+/* --- HERO SECTION --- */
+.hero {
+    padding: 90px 20px 60px;
+}
+
+.subtitulo-hero {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    color: #ff7700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 12px rgba(255, 119, 0, 0.5);
+}
+
+.frase-creativa {
+    font-style: italic;
+    color: #cccccc;
+    font-size: 1.2rem;
+}
+
+/* --- ESTUDIO INFO --- */
+.seccion-info {
+    padding: 40px 20px;
+}
+
+.caja-info {
+    max-width: 750px;
+    margin: 0 auto;
+    background: #000000;
+    border: 1px solid #222222;
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.9);
+}
+
+    .caja-info p {
+        color: #dddddd;
+        font-size: 1.15rem;
+        line-height: 1.6;
+    }
+
+.detalles-atencion {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #1a1a1a;
+    color: #ffaa00;
+    font-size: 1.1rem;
+}
+
+/* --- GALERÍA 11 LUGARES CON MARCO DE LLAMAS --- */
+#galeria {
+    padding: 70px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subtitulo-galeria {
+    color: #888888;
+    font-size: 1.1rem;
+    margin-bottom: 45px;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.tarjeta-foto {
+    position: relative;
+    border-radius: 12px;
+    padding: 12px;
+    background: #000000;
+    border: 6px solid transparent;
+    border-image: linear-gradient(0deg, #ff4500, #ffaa00, #ff2200, #ffdd00) 1;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.4), inset 0 0 10px rgba(255, 100, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+    .tarjeta-foto::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        right: -8px;
+        bottom: -8px;
+        border-radius: 16px;
+        background: radial-gradient(circle, rgba(255,69,0,0.2) 0%, transparent 70%);
+        z-index: 1;
+        pointer-events: none;
+    }
+
+.contenido-foto {
+    position: relative;
+    z-index: 2;
+    background: #000000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .contenido-foto img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
+    }
+
+.tarjeta-foto:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 25px #ff4500, 0 0 50px #ff2200;
+    border-image: linear-gradient(0deg, #ff2200, #ffcc00, #ff4500, #ffee00) 1;
+}
+
+/* --- FORMULARIO --- */
+.seccion-formulario {
+    padding: 70px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.caja-formulario {
+    background: #000000;
+    border: 2px solid #ff4500;
+    box-shadow: 0 0 25px rgba(255, 69, 0, 0.4);
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: left;
+}
+
+    .caja-formulario p {
+        text-align: center;
+        color: #888888;
+        margin-bottom: 30px;
+    }
+
+.grupo-campo {
+    margin-bottom: 20px;
+}
+
+    .grupo-campo label {
+        display: block;
+        color: #ffffff;
+        font-weight: 600;
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+
+    .grupo-campo input, .grupo-campo textarea {
+        width: 100%;
+        padding: 12px 15px;
+        background: #0d0d0d;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 1rem;
+        transition: border-color 0.3s;
+    }
+
+        .grupo-campo input:focus, .grupo-campo textarea:focus {
+            outline: none;
+            border-color: #ff4500;
+        }
+
+.btn-enviar {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+/* --- MAPA Y FOOTER --- */
+.seccion-ubicacion-banner {
+    padding-top: 50px;
+    background-color: #000000;
+}
+
+.mapa-fullwidth {
+    width: 100%;
+    border-top: 2px solid #ff4500;
+    border-bottom: 2px solid #ff4500;
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.4);
+}
+
+    .mapa-fullwidth iframe {
+        display: block;
+        filter: invert(90%) hue-rotate(180deg) contrast(1.2);
+    }
+
+.contenedor-contacto-columnas {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.columna-contacto {
+    flex: 1;
+    min-width: 250px;
+}
+
+    .columna-contacto p {
+        color: #cccccc;
+        margin-bottom: 8px;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+.nombre-estudio {
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.columna-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.btn-wsp {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #25d366 0%, #1eb857 100%);
+    color: white;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+    .btn-wsp:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(37, 211, 102, 0.9);
+    }
+
+footer {
+    padding: 25px;
+    background-color: #000000;
+    border-top: 1px solid #111111;
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 1.4rem;
+    }
+
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenedor-contacto-columnas {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .columna-btn {
+        align-items: center;
+    }
+}
