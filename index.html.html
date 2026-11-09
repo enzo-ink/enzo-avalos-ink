@@ -53,17 +53,17 @@
             <p class="subtitulo-galeria">Una selección de las mejores piezas recientes</p>
 
             <div class="grid-galeria">
-                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto1.jpg.jpeg" alt="Tatuaje"></div></div>
-                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto2.jpg.jpeg" alt="Tatuaje"></div></div>
-                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto3.jpg.jpeg" alt="Tatuaje"></div></div>
-                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto4.jpg.jpeg" alt="Tatuaje"></div></div>
-                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto5.jpg.jpeg" alt="Tatuaje"></div></div>
-                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto6.jpg.jpeg" alt="Tatuaje"></div></div>
-                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto7.jpg.jpeg" alt="Tatuaje"></div></div>
-                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto8.jpg.jpeg" alt="Tatuaje"></div></div>
-                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto9.jpg.jpeg" alt="Tatuaje"></div></div>
-                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto10.jpg.jpeg" alt="Tatuaje"></div></div>
-                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto11.jpg.jpeg" alt="Tatuaje"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto1.jpg.jpeg" alt="Tatuaje 1"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto2.jpg.jpeg" alt="Tatuaje 2"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto3.jpg.jpeg" alt="Tatuaje 3"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto4.jpg.jpeg" alt="Tatuaje 4"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto5.jpg.jpeg" alt="Tatuaje 5"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto6.jpg.jpeg" alt="Tatuaje 6"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto7.jpg.jpeg" alt="Tatuaje 7"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto8.jpg.jpeg" alt="Tatuaje 8"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto9.jpg.jpeg" alt="Tatuaje 9"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto10.jpg.jpeg" alt="Tatuaje 10"></div></div>
+                <div class="tarjeta-foto"><div class="contenido-foto"><img src="foto11.jpg.jpeg" alt="Tatuaje 11"></div></div>
             </div>
         </section>
 
@@ -142,21 +142,21 @@
     </footer>
 
     <script>
-                function enviarFormularioWsp() {
-                    var nombre = document.getElementById('nombre').value;
-                    var zona = document.getElementById('zona').value;
-                    var tamano = document.getElementById('tamano').value;
-                    var idea = document.getElementById('idea').value;
+        function enviarFormularioWsp() {
+            var nombre = document.getElementById('nombre').value;
+            var zona = document.getElementById('zona').value;
+            var tamano = document.getElementById('tamano').value;
+            var idea = document.getElementById('idea').value;
 
-                    if (!nombre || !zona || !idea) {
-                        alert('Por favor completá los campos del formulario antes de enviar.');
-                        return;
-                    }
+            if (!nombre || !zona || !idea) {
+                alert('Por favor completá los campos del formulario antes de enviar.');
+                return;
+            }
 
-                    var texto = `Hola Enzo, soy ${nombre}. Quisiera cotizar un tatuaje:%0A%0A- *Zona:* ${zona}%0A- *Tamaño aprox:* ${tamano}%0A- *Idea:* ${idea}`;
-                    var url = `https://wa.me/5493492603853?text=${texto}`;
-                    window.open(url, '_blank');
-                }
+            var texto = `Hola Enzo, soy ${nombre}. Quisiera cotizar un tatuaje:%0A%0A- *Zona:* ${zona}%0A- *Tamaño aprox:* ${tamano}%0A- *Idea:* ${idea}`;
+            var url = `https://wa.me/5493492603853?text=${texto}`;
+            window.open(url, '_blank');
+        }
     </script>
 </body>
 </html>
